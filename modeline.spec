@@ -36,13 +36,12 @@ install -d $RPM_BUILD_ROOT/%{_sysconfdir}
 
 install examples/mode.conf $RPM_BUILD_ROOT/%{_sysconfdir}
 
-gzip -9nf README ChangeLog
-
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc README ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/*/*
 %config %{_sysconfdir}/*

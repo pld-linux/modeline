@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Base/Utilities
 Source0:	http://home.kvalito.no/~bragthor/cgi-bin/countdown.cgi?modeline/%{name}-%{version}.tar.bz2
+# Source0-md5:	cc5cabf6f8143d7e5e2df1587227c678
 URL:		http://home.kvalito.no/~bragthor/files.shtml
 BuildRequires:	autoconf
 BuildRequires:	automake

@@ -25,7 +25,7 @@ XFree86, SVGAlib oraz FrameBuffera.
 %build
 aclocal
 autoconf
-%configure 
+%configure
 %{__make}
 
 %install
@@ -36,7 +36,7 @@ install -d $RPM_BUILD_ROOT/%{_sysconfdir}
 
 install examples/mode.conf $RPM_BUILD_ROOT/%{_sysconfdir}
 
-gzip -9nf README ChangeLog 
+gzip -9nf README ChangeLog
 
 %clean
 rm -rf $RPM_BUILD_ROOT

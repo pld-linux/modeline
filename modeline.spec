@@ -24,7 +24,7 @@ XFree86, SVGAlib oraz FrameBuffera.
 
 %build
 aclocal
-autoconf
+%{__autoconf}
 %configure
 %{__make}
 

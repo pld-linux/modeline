@@ -3,10 +3,10 @@ Summary(pl):	Generator trybów graficznych dla XFree86/SVGAlib/FrameBuffer
 Name:		modeline
 Version:	0.6.5
 Release:	1
+License:	GPL
 Group:		Base/Utilities
 Group(de):	Gründsätzlich/Werkzeuge
 Group(pl):	Podstawowe/Narzêdzia
-License:	GPL
 Source0:	http://home.kvalito.no/~bragthor/cgi-bin/countdown.cgi?modeline/%{name}-%{version}.tar.gz
 URL:		http://home.kvalito.no/~bragthor/files/files.shtml
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -28,7 +28,6 @@ XFree86, SVGAlib oraz FrameBuffera.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-
 install -d $RPM_BUILD_ROOT/%{_sysconfdir}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT

@@ -25,6 +25,7 @@ XFree86, SVGAlib oraz FrameBuffera.
 %build
 %{__aclocal}
 %{__autoconf}
+install %{_datadir}/automake/config.* .
 %configure
 %{__make}
 

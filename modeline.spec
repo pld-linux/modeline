@@ -23,6 +23,8 @@ XFree86, SVGAlib oraz FrameBuffera.
 %setup  -q
 
 %build
+aclocal
+autoconf
 %configure 
 %{__make}
 

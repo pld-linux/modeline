@@ -9,6 +9,8 @@ Group(de):	Gründsätzlich/Werkzeuge
 Group(pl):	Podstawowe/Narzêdzia
 Source0:	http://home.kvalito.no/~bragthor/cgi-bin/countdown.cgi?modeline/%{name}-%{version}.tar.gz
 URL:		http://home.kvalito.no/~bragthor/files/files.shtml
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

@@ -32,11 +32,12 @@ install %{_datadir}/automake/config.* .
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT/%{_sysconfdir}
+install -d $RPM_BUILD_ROOT%{_sysconfdir}
 
-%{__make} install DESTDIR=$RPM_BUILD_ROOT
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
-install examples/mode.conf $RPM_BUILD_ROOT/%{_sysconfdir}
+install examples/mode.conf $RPM_BUILD_ROOT%{_sysconfdir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -46,4 +47,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/*/*
-%config %{_sysconfdir}/*
+%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/*

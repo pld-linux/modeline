@@ -1,0 +1,16 @@
+diff -Nur old/src/readfile.c new/src/readfile.c
+--- old/src/readfile.c	2000-08-07 20:23:50.000000000 +0000
++++ new/src/readfile.c	2003-10-12 16:05:29.000000000 +0000
+@@ -32,9 +32,9 @@
+   
+   /* if there's less than 256kb of memory, we die */
+   if ((outmem / (256 * 1024)) < 1)
+-    Die ("Memory less than 256kb (%i bytes)
+-Either you have a really bad video adaptor, or something went wrong.
+-Check you config\n", outmem);
++    Die ("Memory less than 256kb (%i bytes) "
++    "Either you have a really bad video adaptor, or something went wrong. "
++    "Check you config\n", outmem);
+   else return outmem;
+   
+   return -1;

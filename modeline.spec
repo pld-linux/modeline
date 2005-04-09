@@ -7,7 +7,7 @@ License:	GPL
 Group:		Base/Utilities
 Source0:	http://home.kvalito.no/~bragthor/cgi-bin/countdown.cgi?modeline/%{name}-%{version}.tar.bz2
 # Source0-md5:	cc5cabf6f8143d7e5e2df1587227c678
-Patch0:		modeline-acbuild.patch
+Patch0:		%{name}-acbuild.patch
 URL:		http://home.kvalito.no/~bragthor/files.shtml
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -28,7 +28,7 @@ XFree86, SVGAlib oraz FrameBuffera.
 %build
 %{__aclocal}
 %{__autoconf}
-install %{_datadir}/automake/config.* .
+install /usr/share/automake/config.* .
 %configure
 %{__make}
 
@@ -49,4 +49,4 @@ rm -rf $RPM_BUILD_ROOT
 %doc README ChangeLog
 %attr(755,root,root) %{_bindir}/*
 %{_mandir}/*/*
-%config(noreplace) %verify(not size mtime md5) %{_sysconfdir}/*
+%config(noreplace) %verify(not md5 mtime size) %{_sysconfdir}/*

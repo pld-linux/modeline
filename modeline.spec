@@ -1,5 +1,5 @@
 Summary:	XFree86/SVGAlib/FrameBuffer mode lines generator
-Summary(pl):	Generator trybów graficznych dla XFree86/SVGAlib/FrameBuffer
+Summary(pl.UTF-8):   Generator trybÃ³w graficznych dla XFree86/SVGAlib/FrameBuffer
 Name:		modeline
 Version:	0.6.5
 Release:	3
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Modeline is a small utility to make XFree86/SVGAlib/FrameBuffer
 modelines.
 
-%description -l pl
-Modeline jest ma³ym narzêdziem do generowania trybów graficznych dla
+%description -l pl.UTF-8
+Modeline jest maÅ‚ym narzÄ™dziem do generowania trybÃ³w graficznych dla
 XFree86, SVGAlib oraz FrameBuffera.
 
 %prep
